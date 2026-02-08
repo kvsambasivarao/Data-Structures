@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+class Node {
+    int data;
+    Node next;
+
+    Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+}
+
+class StackLinkedList {
+    static Node top = null;
+
+    static void push(Scanner sc) {
+        System.out.print("Enter element to push: ");
+        int item = sc.nextInt();
+
+        Node newNode = new Node(item);
+        newNode.next = top;
+        top = newNode;
+    }
+
+    static void pop() {
+        if (top == null) {
+            System.out.println("Stack Underflow!");
+            return;
+        }
+        System.out.println("Popped element: " + top.data);
+        top = top.next;
+    }
+
+    static void display() {
+        if (top == null) {
+            System.out.println("Stack is empty!");
+            return;
+        }
+        System.out.println("Stack elements:");
+        Node temp = top;
+        while (temp != null) {
+            System.out.println(temp.data);
+            temp = temp.next;
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int choice;
+
+        do {
+            System.out.println("\n--- STACK USING LINKED LIST ---");
+            System.out.println("1. Push");
+            System.out.println("2. Pop");
+            System.out.println("3. Display");
+            System.out.println("4. Exit");
+            System.out.print("Enter your choice: ");
+            choice = sc.nextInt();
+
+            switch(choice) {
+                case 1: push(sc); break;
+                case 2: pop(); break;
+                case 3: display(); break;
+                case 4: System.out.println("Exiting program..."); break;
+                default: System.out.println("Invalid choice!");
+            }
+        } while(choice != 4);
+
+        sc.close();
+    }
+}
