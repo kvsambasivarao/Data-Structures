@@ -1,0 +1,51 @@
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+top = None
+
+def push():
+    global top
+    item = int(input("Enter element to push: "))
+    new_node = Node(item)
+    new_node.next = top
+    top = new_node
+
+def pop():
+    global top
+    if top is None:
+        print("Stack Underflow!")
+        return
+    print("Popped element:", top.data)
+    top = top.next
+
+def display():
+    if top is None:
+        print("Stack is empty!")
+        return
+    print("Stack elements:")
+    temp = top
+    while temp:
+        print(temp.data)
+        temp = temp.next
+
+while True:
+    print("\n--- STACK USING LINKED LIST ---")
+    print("1. Push")
+    print("2. Pop")
+    print("3. Display")
+    print("4. Exit")
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        push()
+    elif choice == 2:
+        pop()
+    elif choice == 3:
+        display()
+    elif choice == 4:
+        print("Exiting program...")
+        break
+    else:
+        print("Invalid choice!")
