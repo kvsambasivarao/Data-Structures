@@ -14,7 +14,7 @@ Node* createNode(int key) {
     newNode->data = key;
     newNode->left = NULL;
     newNode->right = NULL;
-    newNode->rTag = 1;   // Initially thread
+    newNode->rTag = 1;
     return newNode;
 }
 
@@ -22,33 +22,26 @@ Node* insert(Node* root, int key) {
     Node *parent = NULL, *current = root;
 
     while (current != NULL) {
-        if (key == current->data)
-            return root;
-
         parent = current;
-
         if (key < current->data) {
-            if (current->left == NULL)
-                break;
-            current = current->left;
+            if (current->left != NULL)
+                current = current->left;
+            else break;
         } else {
-            if (current->rTag == 1)
-                break;
-            current = current->right;
+            if (current->rTag == 0)
+                current = current->right;
+            else break;
         }
     }
 
     Node* newNode = createNode(key);
 
-    if (parent == NULL) {
+    if (parent == NULL)
         root = newNode;
-        newNode->right = NULL;
-    }
     else if (key < parent->data) {
         parent->left = newNode;
         newNode->right = parent;
-    }
-    else {
+    } else {
         newNode->right = parent->right;
         parent->right = newNode;
         parent->rTag = 0;
@@ -68,7 +61,6 @@ void inorder(Node* root) {
 
     while (current != NULL) {
         printf("%d ", current->data);
-
         if (current->rTag == 1)
             current = current->right;
         else
@@ -78,7 +70,6 @@ void inorder(Node* root) {
 
 int main() {
     Node* root = NULL;
-
     root = insert(root, 15);
     insert(root, 12);
     insert(root, 22);
@@ -87,6 +78,5 @@ int main() {
 
     printf("Inorder Traversal:\n");
     inorder(root);
-
     return 0;
 }
