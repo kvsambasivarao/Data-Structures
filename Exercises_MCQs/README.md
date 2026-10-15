@@ -6,24 +6,36 @@ To keep the printed book compact, the technical/interview questions, programming
 
 **What each file contains**
 
-Each chapter file has four parts: the technical/interview questions, the programming exercises (Chapter 1 has a section called "Exercises" instead), the multiple choice questions with their options, and the answer key as a table. Question numbers are the same as in the book.
+*Each chapter file has four parts: the technical/interview questions, the programming exercises (Chapter 1 has a section called "Exercises" instead), the multiple choice questions with their options, and the answer key as a table. Question numbers are the same as in the book.
 -----------------------------------------------------------------------------------------------------------
 
 **Contents**
 
 Ch   Title   
 1 Introduction to Data Structures
+
 2 Linked Lists
+
 3 Stacks
+
 4 Queues
+
 5 Trees
+
 6 Advanced Binary Tree Structures
+
 7 Multi-way Search Trees
+
 8 Heaps
+
 9 Graphs
+
 10 Searching and Sorting
+
 11 Hashing and Collision
+
 12 Files and File Organization
+
 -----------------------------------------------------------------------------------------------------------
 
 **README.md**
