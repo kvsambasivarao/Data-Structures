@@ -6,7 +6,7 @@ To keep the printed book compact, the technical/interview questions, programming
 
 **What each file contains**
 
-Each chapter file has four parts: the technical/interview questions, the programming exercises (Chapter 1 has a section called "Exercises" instead), the multiple choice questions with their options, and the answer key as a table. Question numbers are the same as in the book.
+**Each chapter file has four parts: the technical/interview questions, the programming exercises (Chapter 1 has a section called "Exercises" instead), the multiple choice questions with their options, and the answer key as a table. Question numbers are the same as in the book.**
 -----------------------------------------------------------------------------------------------------------
 
 **Contents**
@@ -48,7 +48,7 @@ Available for every chapter at the end of MCQs
 -----------------------------------------------------------------------------------------------------------
 **How to use**
 
-Students can read a chapter's PDF alongside the textbook and attempt the questions before checking the answer key at the end of the same file. Teachers can print the PDFs directly or copy questions from the Markdown files into assignments and tests.
+**Students can read a chapter's PDF alongside the textbook and attempt the questions before checking the answer key at the end of the same file. Teachers can print the PDFs directly or copy questions from the Markdown files into assignments and tests.**
 -----------------------------------------------------------------------------------------------------------
 **Feedback**
 
