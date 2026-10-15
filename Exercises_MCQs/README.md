@@ -36,6 +36,7 @@ Ch   Title
 11 Hashing and Collision
 
 12 Files and File Organization
+
 -----------------------------------------------------------------------------------------------------------
 
 README.md
