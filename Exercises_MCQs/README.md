@@ -6,7 +6,7 @@ To keep the printed book compact, the technical/interview questions, programming
 
 **What each file contains**
 
-*Each chapter file has four parts: the technical/interview questions, the programming exercises (Chapter 1 has a section called "Exercises" instead), the multiple choice questions with their options, and the answer key as a table. Question numbers are the same as in the book.
+Each chapter file has four parts: the technical/interview questions, the programming exercises (Chapter 1 has a section called "Exercises" instead), the multiple choice questions with their options, and the answer key as a table. Question numbers are the same as in the book.
 -----------------------------------------------------------------------------------------------------------
 
 **Contents**
